@@ -10,7 +10,7 @@
   {% endif %}
 
   {%- if site.listen_for_clients_preferred_style -%}
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/main.css" | relative_url }}">
+    <link rel="stylesheet" type="text/css" href=".{{ "/assets/main.css" | relative_url }}">
   {%- else -%}
     {%- if site.style == 'light' -%}
       <link rel="stylesheet" type="text/css" href=".{{ "/assets/main-light.css" | relative_url }}">
